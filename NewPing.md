@@ -1,11 +1,12 @@
 # NewPing-
-# include <NewPing.h>  //Neping 라이브러리를 추가
+```언어
+#include <NewPing.h>  //Neping 라이브러리를 추가
 
-# define TRIGGER_PIN  12  //트리거 핀을 12번 핀으로 설정
+#define TRIGGER_PIN  12  //트리거 핀을 12번 핀으로 설정
 
-# define ECHO_PIN     11  //에코 핀을 11번 핀으로 설정
+#define ECHO_PIN     11  //에코 핀을 11번 핀으로 설정
 
-# define MAX_DISTANCE 100  //최대 측정 거리를 100cm로 설정
+#define MAX_DISTANCE 100  //최대 측정 거리를 100cm로 설정
 
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 
@@ -25,5 +26,4 @@ void loop() {
   Serial.print(distance);
   Serial.println("cm");
 }
-
-</aside>
+```
